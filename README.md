@@ -1,34 +1,42 @@
-# Dirty Sales Data Cleaning Project
+#  Data Cleaning Report for `clean data.xlsx`
 
-This project demonstrates how to clean and prepare a messy sales dataset using Microsoft Excel. It is part of my learning journey as a data analyst, focusing on essential data cleaning techniques.
+## Summary of Missing Values Before Cleaning
 
-## Dataset Overview
+| Column             | Missing Values |
+|--------------------|----------------|
+| Product Category   | 19             |
+| Discount           | 18             |
+| Tax                | 17             |
+| Payment Method     | 17             |
+| Region             | 20             |
+| Shipping Status    | 16             |
+| Delivery Date      | 36             |
+| Notes              | 36             |
 
-The dataset simulates sales data for PlayStation consoles and includes common data quality issues such as:
-- Inconsistent date formats
-- Duplicate entries
-- Inconsistent text formatting (e.g., names and product titles)
-- Missing values
+---
 
-## Tools Used
-- Microsoft Excel
+## 🛠Cleaning Strategy Applied
 
-## Skills Practiced
-- Removing duplicates
-- Standardizing date formats
-- Cleaning and formatting text
-- Handling missing values
-- Creating summary tables with PivotTables
+- **Numeric Columns** (e.g., `Discount`, `Tax`) were filled with their **mean** value.
+- **Categorical Columns** (e.g., `Region`, `Payment Method`, `Shipping Status`) were filled with **`Unknown`**.
+- **Date Columns** (e.g., `Delivery Date`) were left as-is if not applicable or filled with a placeholder where needed.
+- **Text Columns** (e.g., `Notes`) were filled with **`No Notes`** or a similar placeholder.
 
-## Project Goals
-- Transform raw, unstructured data into a clean and analyzable format
-- Practice Excel functions like `TRIM`, `PROPER`, `IFERROR`, `TEXT`, and `VLOOKUP`
-- Build a foundation for more advanced data analysis and visualization
+---
 
-## Next Steps
-- Visualize cleaned data using charts and dashboards
-- Replicate the project in Power BI or Python for comparison
+##  Final Output
 
-## About Me
-I'm an aspiring data analyst passionate about turning messy data into meaningful insights. This project is part of my portfolio to demonstrate my growing skills in data cleaning and analysis.
+The cleaned dataset is saved as `cleaned_data.xlsx`. All missing values have been addressed using the strategies above, ensuring the dataset is ready for further analysis, visualization, or modeling.
+
+---
+
+##  Files
+
+- `clean data.xlsx` – Original dataset with missing values.
+- `cleaned_data.xlsx` – Cleaned dataset with all missing values handled.
+- `README_Data_Cleaning.md` – This documentation file.
+
+---
+
+
 
