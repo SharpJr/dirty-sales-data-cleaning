@@ -1,8 +1,8 @@
-# 🧼 Comprehensive Data Cleaning Report
+# Comprehensive Data Cleaning Report
 
 **Dataset:** `excel_cleaning_template_expanded.xlsx`
 
-## 📊 Data Overview
+## Data Overview
 - **Total Rows:** 100
 - **Total Columns:** 29
 - **Column Names:**
@@ -36,12 +36,12 @@
   - Standardized Shipping Formula
   - Feedback Numeric Formula
 
-## ❗ Issues Identified
+## Issues Identified
 - Missing values detected in several columns.
 - Potential inconsistent formatting or data types.
 - Some columns may require standardization or type conversion.
 
-### 🔍 Missing Values Summary
+### Missing Values Summary
 
 | Column | Missing Values |
 |--------|----------------|
@@ -60,7 +60,7 @@
 | Standardized Payment Formula | 17 |
 | Standardized Shipping Formula | 16 |
 
-### 🧪 Data Types
+### Data Types
 
 | Column | Data Type |
 |--------|-----------|
@@ -94,7 +94,7 @@
 | Standardized Shipping Formula | object |
 | Feedback Numeric Formula | int64 |
 
-## 🛠️ Cleaning Strategies Applied
+## Cleaning Strategies Applied
 - **Missing Values:**
   - Numeric columns: filled with mean or median.
   - Categorical columns: filled with 'Unknown' or mode.
@@ -104,12 +104,12 @@
 - **Standardization:**
   - Trimmed whitespace, standardized text casing, and removed duplicates if any.
 
-## ✅ Final Output
+## Final Output
 - Cleaned dataset is ready for analysis.
 - All missing values have been addressed.
 - Data types are consistent and standardized.
 
-## 📁 Files
+## Files
 - `excel_cleaning_template_expanded.xlsx` – Original dataset.
 - `cleaned_data.xlsx` – Cleaned version of the dataset.
 - `README.md` – This documentation file.
